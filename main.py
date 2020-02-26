@@ -44,10 +44,14 @@ class Car():
 	def increaseSpeed(self):
 		if self.actualSpeed < (self.maxSpeed - 9):
 			self.actualSpeed += 10
+		else:
+			print("You are at max speed!!! You can not increase speed")
 
 	def decreaseSpeed(self):
 		if self.actualSpeed > 10:
 			self.actualSpeed -= 10
+		print("You are at 0 speed!!! You can not slow down")
+
 
 	def hitGas(self):
 		self.increaseSpeed()
